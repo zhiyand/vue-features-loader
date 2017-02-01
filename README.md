@@ -8,7 +8,7 @@
 
 ## Usage
 
-1. Put `vue-features-loader` into the loaders chain for `Vue` files
+### 1. Put `vue-features-loader` into the loaders chain for `Vue` files
 
 Within your Webpack config:
 
@@ -24,7 +24,7 @@ loaders: [
 ...
 ```
 
-2. Create a features configuration file `features.js`
+### 2. Create a features configuration file `features.js`
 
 ```javascript
 var define = require('vue-features-loader/define')
@@ -42,7 +42,7 @@ module.exports = {
   defines: define(features)
 }
 
-3. Feed your feature toggles into DefinePlugin for use with JavaScript, and
+### 3. Feed your feature toggles into DefinePlugin for use with JavaScript, and
 feed your feature toggles to vue-features-loader for use with Vue templates.
 
 Within your Webpack config:
@@ -61,7 +61,7 @@ vueFeatures: feature.features
 
 ```
 
-4. Guard your code with feature toggles in JavaScript
+### 4. Guard your code with feature toggles in JavaScript
 
 ```javascript
 ...
@@ -71,13 +71,17 @@ if (features.AWESOME_FEATURE) {
 ...
 ```
 
-5. Guard your code with feature toggles in Vue templates
+### 5. Guard your code with feature toggles in Vue templates
 
 ```html
 ...
 <on feature="FEATURE_IN_DEVELOPMENT">
   <p>This should only show up if the FEATURE_IN_DEVELOPMENT is turned on.</p>
 </on>
+
+<off feature="FEATURE_IN_DEVELOPMENT">
+  <p>This should only show up if the FEATURE_IN_DEVELOPMENT is turned off.</p>
+</off>
 ...
 ```
 

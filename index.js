@@ -10,7 +10,7 @@ module.exports = function (content) {
     var shouldReplace = _this.get(0).tagName === 'on' ? true : false
 
     if (features[feature] === shouldReplace) {
-      _this.replaceWith(_this.children())
+      _this.replaceWith(_this.html())
     } else {
       _this.remove()
     }
