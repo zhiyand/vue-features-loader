@@ -1,6 +1,6 @@
 {
   "name": "vue-features-loader",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Feature flags for Vue.js",
   "main": "index.js",
   "scripts": {
