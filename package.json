@@ -1,11 +1,14 @@
 {
   "name": "vue-features-loader",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "description": "Feature flags for Vue.js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "DUAN Zhiyan <me@zhiyan.de>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^0.22.0"
+  }
 }
