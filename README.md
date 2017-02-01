@@ -35,12 +35,12 @@ var features = {
   FEATURE_IN_DEVELOPMENT: isProduction() ? false : true,
   ...
 }
-```
 
 module.exports = {
   features,
   defines: define(features)
 }
+```
 
 ### 3. Feed your feature toggles into DefinePlugin for use with JavaScript, and
 feed your feature toggles to vue-features-loader for use with Vue templates.
